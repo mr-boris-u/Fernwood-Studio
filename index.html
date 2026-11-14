@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/jquery.js" defer async></script>
+  <script src="js/app.js" defer async></script>
+  <link rel="stylesheet" href="css/app.css">
+  <title>Fernwood Studio</title>
+</head>
+<body>
+  <a href="#top" title="home" onclick="closeMenu()">
+     <img id="logo" src="assets/images/logo.png" alt="Logo">
+  </a>
+  <div id="hamburger" onclick="toggleMenu();">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>  
+  </div>
+  <div id="topBar"></div>
+  <nav>
+    <div id="navLinks">
+    <a href="#hero" title="hero" onclick="closeMenu();">HERO</a>
+    <a href="#about" title="about" onclick="closeMenu();">ABOUT</a>
+    <a href="#plants" title="plants" onclick="closeMenu();">PLANTS</a>
+    <a href="#tips" title="tips" onclick="closeMenu();">TIPS</a>
+    <a href="#contact" title="contact" onclick="closeMenu();">CONTACT</a>
+  </div>
+    <div id="navSocial">
+    <a href="https://www.twitter.com" target="_blank">
+      <img src="assets/images/twitterIcon.png" alt="Twitter">
+    </a>
+    <a href="https://www.michaellewis.ca" target="_blank">
+      <img src="assets/images/dragonbitIcon.png" alt="Dragonbit">
+    </a>
+    <a href="https://www.linkedin.com" target="_blank">
+      <img src="assets/images/linkedInIcon.png" alt="LinkedIn">
+    </a>
+    <a href="https://www.codepen.io" target="_blank">
+      <img src="assets/images/codepenIcon.png" alt="Codepen">
+    </a>
+  </div>
+</nav>
+  <!--Grid Code-->
+   <div id="grid">
+    <header id="hero">
+      <div id="headerContent">
+        <h1>Bring the forest indoors.</h1>
+        <p>Rare and everyday houseplants, curated with care.</p>
+        <a href="#plants" class="ctaBtn">Shop plants</a>
+      </div>
+    </header>
+    <!-- QUOTE BANNER -->
+    <div id="quot">
+      <h2>"Every room deserves to breathe."</h2>
+      <p>Handpicked houseplants delivered to your door.</p>
+      <a href="#plants" class="ctaBtn">Shop plants</a>
+    </div>
+    <!-- ABOUT -->
+    <div id="about">
+      <div id="aboutText">
+        <h2>We're plant people.</h2>
+        <p>Fernwood Studio started in 2019 with one goal — make it easy for anyone to bring living greenery into their home.</p>
+        <p>Every plant we carry has been sourced by people who care as much about it as you will. We include free care cards with every purchase.</p>
+        <a href="#contact" class="ctaBtn">Get in touch</a>
+      </div>
+      <div id="aboutImg">
+        <img src="assets/images/about.png" alt="Tropical leaf close-up">
+      </div>
+    </div>
+    <!-- PLANTS -->
+    <div id="plants">
+      <h2>Featured plants</h2>
+      <p class="sectionSub">A few of our favourites this season.</p>
+      <div id="plantGrid">
+        <div class="plantCard">
+          <img src="assets/images/monstera2.png" alt="Monstera Deliciosa">
+          <div class="plantInfo">
+            <h3>Monstera Deliciosa</h3>
+            <p>The iconic split-leaf beauty. Thrives in indirect light.</p>
+            <span class="price">$24.99</span>
+            <span class="badge">Easy care</span>
+            <a href="#contact" class="buyBtn">Buy now</a>
+          </div>
+        </div>
+        <div class="plantCard">
+          <img src="assets/images/fiddleleaffig.png" alt="Fiddle Leaf Fig">
+          <div class="plantInfo">
+            <h3>Fiddle Leaf Fig</h3>
+            <p>Dramatic large leaves for any bright room.</p>
+            <span class="price">$34.99</span>
+            <span class="badge badge--mid">Moderate</span>
+            <a href="#contact" class="buyBtn">Buy now</a>
+          </div>
+        </div>
+        <div class="plantCard">
+          <img src="assets/images/pothos.png" alt="Golden Pothos">
+          <div class="plantInfo">
+            <h3>Golden Pothos</h3>
+            <p>Trailing vines of golden-green. Perfect for beginners.</p>
+            <span class="price">$14.99</span>
+            <span class="badge">Easy care</span>
+            <a href="#contact" class="buyBtn">Buy now</a>
+          </div>
+        </div>
+        <div class="plantCard">
+          <img src="assets/images/snakeplant.png" alt="Snake Plant">
+          <div class="plantInfo">
+            <h3>Snake Plant</h3>
+            <p>Architectural and air-purifying. Tolerates low light.</p>
+            <span class="price">$19.99</span>
+            <span class="badge">Easy care</span>
+            <a href="#contact" class="buyBtn">Buy now</a>
+          </div>
+        </div>
+        <div class="plantCard">
+          <img src="assets/images/birdofparadise.png" alt="Bird of Paradise">
+          <div class="plantInfo">
+            <h3>Bird of Paradise</h3>
+            <p>Tropical giant for sunny corners.</p>
+            <span class="price">$49.99</span>
+            <span class="badge badge--mid">Moderate</span>
+            <a href="#contact" class="buyBtn">Buy now</a>
+          </div>
+        </div>
+        <div class="plantCard">
+          <img src="assets/images/zzplant.png" alt="ZZ Plant">
+          <div class="plantInfo">
+            <h3>ZZ Plant</h3>
+            <p>Glossy dark leaves. Thrives on neglect.</p>
+            <span class="price">$22.99</span>
+            <span class="badge">Easy care</span>
+            <a href="#contact" class="buyBtn">Buy now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- TIPS SECTION -->
+    <div id="tips">
+      <h2>Plant care basics</h2>
+      <div id="tipsGrid">
+        <div class="tipCard">
+          <div class="tipIcon">&#9788;</div>
+          <h3>Light</h3>
+          <p>Most houseplants prefer bright, indirect light. A sheer curtain protects from harsh afternoon sun.</p>
+        </div>
+        <div class="tipCard">
+          <div class="tipIcon">&#128167;</div>
+          <h3>Water</h3>
+          <p>Overwatering kills more plants than anything else. Check the top 2cm of soil before watering.</p>
+        </div>
+        <div class="tipCard">
+          <div class="tipIcon">&#129716;</div>
+          <h3>Soil</h3>
+          <p>Most tropicals need well-draining mix. Add perlite and repot every 1–2 years.</p>
+        </div>
+        <div class="tipCard">
+          <div class="tipIcon">&#127787;</div>
+          <h3>Humidity</h3>
+          <p>Tropical plants love moisture. Group plants together or use a pebble tray in dry winters.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <div id="contact">
+      <h2>Get in touch</h2>
+      <form class="contactForm">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="jane@email.com" required>
+        <label for="interest">I'm interested in</label>
+        <select id="interest" name="interest">
+          <option value="">Choose one</option>
+          <option value="indoor">Indoor plants</option>
+          <option value="gift">A gift</option>
+          <option value="care">Care advice</option>
+        </select>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us what you're looking for..."></textarea>
+        <button type="submit">Send message</button>
+      </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div id="rights">&copy; 2026 Fernwood Studio. All rights reserved.</div>
+      <div id="footerSocial">
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="assets/images/twitterIcon.png" alt="Twitter">
+        </a>
+        <a href="https://www.michaellewis.ca" target="_blank">
+          <img src="assets/images/dragonbitIcon.png" alt="Dragonbit">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <img src="assets/images/linkedInIcon.png" alt="LinkedIn">
+        </a>
+        <a href="https://www.codepen.io" target="_blank">
+          <img src="assets/images/codepenIcon.png" alt="Codepen">
+        </a>
+      </div>
+    </footer>
+      </div>
+</body>
+</html>
